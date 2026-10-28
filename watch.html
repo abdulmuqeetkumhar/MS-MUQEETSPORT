@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Live — Muqeet Sport Channel</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/watch.css">
+</head>
+<body data-page="watch">
+  <div data-header></div>
+  <main class="wrap">
+    <div class="player-shell">
+      <div class="player" data-player>
+        <img data-thumb src="https://images.unsplash.com/photo-1461896836934-ffe607ba6851?auto=format&fit=crop&w=1600&q=80" alt="Live sport">
+        <div class="player-title">
+          <span class="pill pill-live" data-status>Live</span>
+          <h2 data-title>MS1 · The Breakdown</h2>
+        </div>
+        <div class="player-ui" data-ui>
+          <p data-detail>Free desk show</p>
+          <p class="note" data-access></p>
+        </div>
+        <div class="gate" data-gate>
+          <div class="lock-card">
+            <span class="pill pill-pro">Premium match</span>
+            <h3>This live match is Premium</h3>
+            <p>Subscribe to unlock the full live feed. Studio shows and highlights stay free.</p>
+            <a class="btn btn-gold" data-gate-btn href="premium.html">Get MS Premium</a>
+            <p class="note">Try the free desk first: <a href="watch.html?id=studio">The Breakdown</a></p>
+          </div>
+        </div>
+      </div>
+      <aside class="guide">
+        <h3>Channel guide</h3>
+        <a class="channel" data-channel="ind-aus" href="watch.html?id=ind-aus">
+          <strong>CR1</strong>
+          <div>AUS v IND Test<br><small>Premium · Live</small></div>
+          <span class="pill pill-pro">Pro</span>
+        </a>
+        <a class="channel" data-channel="ars-liv" href="watch.html?id=ars-liv">
+          <strong>FB1</strong>
+          <div>Arsenal v Liverpool<br><small>Premium · Live</small></div>
+          <span class="pill pill-pro">Pro</span>
+        </a>
+        <a class="channel" data-channel="studio" href="watch.html?id=studio">
+          <strong>MS1</strong>
+          <div>The Breakdown<br><small>Free studio</small></div>
+          <span class="pill pill-free">Free</span>
+        </a>
+        <a class="channel" data-channel="tor-bos" href="watch.html?id=tor-bos">
+          <strong>HK1</strong>
+          <div>Leafs v Bruins<br><small>Premium · Live</small></div>
+          <span class="pill pill-pro">Pro</span>
+        </a>
+        <a class="channel" data-channel="lad-nyy" href="watch.html?id=lad-nyy">
+          <strong>BB1</strong>
+          <div>World Series Game 6<br><small>Premium · Full replay</small></div>
+          <span class="pill pill-pro">Pro</span>
+        </a>
+        <a class="channel" data-channel="celtics" href="watch.html?id=celtics">
+          <strong>NBA</strong>
+          <div>Celtics v Knicks<br><small>Free condensed</small></div>
+          <span class="pill pill-free">Free</span>
+        </a>
+        <a class="channel" data-channel="paris" href="watch.html?id=paris">
+          <strong>TN1</strong>
+          <div>Alcaraz v Sinner<br><small>Premium · Tonight</small></div>
+          <span class="pill pill-pro">Pro</span>
+        </a>
+        <a class="channel" data-channel="f1" href="watch.html?id=f1">
+          <strong>F1</strong>
+          <div>Yas Marina Qualifying<br><small>Free highlights</small></div>
+          <span class="pill pill-free">Free</span>
+        </a>
+      </aside>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/watch.js"></script>
+</body>
+</html>

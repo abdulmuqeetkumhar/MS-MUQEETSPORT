@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in — Muqeet Sport Channel</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="login">
+  <div data-header></div>
+  <section class="auth-page">
+    <div class="auth-visual">
+      <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?auto=format&fit=crop&w=1400&q=80" alt="Night stadium">
+      <div class="veil">
+        <span class="pill pill-live">Live now</span>
+        <h2>Pick up the match you paused.</h2>
+        <p>Same account on web and phone. Premium unlocks the live feeds.</p>
+      </div>
+    </div>
+    <div class="auth-panel">
+      <div class="auth-box">
+        <div class="kicker">Member access</div>
+        <h1>Sign in</h1>
+        <p>Use the email you registered with. Accounts stay in this browser only — no server, no real billing.</p>
+        <div id="auth-alert" class="alert"></div>
+        <form class="form" id="login-form">
+          <label>Email
+            <input type="email" name="email" required placeholder="you@email.com" autocomplete="email">
+          </label>
+          <label>Password
+            <input type="password" name="password" required placeholder="••••••••" autocomplete="current-password">
+          </label>
+          <button class="btn btn-lime" type="submit">Sign in</button>
+        </form>
+        <p class="auth-links"><a href="signup.html">Need an account?</a><a href="premium.html">See Premium</a></p>
+      </div>
+    </div>
+  </section>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

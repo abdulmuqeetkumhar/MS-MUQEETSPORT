@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Muqeet Sport Channel</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="contact">
+  <div data-header></div>
+  <main class="wrap section">
+    <div class="kicker">Desk</div>
+    <h1>Contact Muqeet Sport</h1>
+    <div class="contact-grid">
+      <form class="form" id="contact-form">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Topic
+          <select name="topic">
+            <option>Programming / rights</option>
+            <option>Newsroom tip</option>
+            <option>Premium billing (demo)</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message <textarea name="msg" rows="6" required></textarea></label>
+        <button class="btn btn-lime" type="submit">Send message</button>
+        <div id="auth-alert" class="alert"></div>
+      </form>
+      <div class="info-box">
+        <h3>Network office</h3>
+        <p>Muqeet Sport Channel<br>Founded by Abdul Muqeet<br>Karachi · Lahore bureau on match days</p>
+        <p>Newsroom: news@muqeetsport.demo<br>Watch help: watch@muqeetsport.demo</p>
+        <p class="note">The form only shows a confirmation in this demo. Nothing is emailed.</p>
+      </div>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var box = document.getElementById("auth-alert");
+      box.textContent = "Message logged on the desk. We will not actually email you from this demo.";
+      box.className = "alert show ok";
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Muqeet Sport Channel</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="signup">
+  <div data-header></div>
+  <section class="auth-page">
+    <div class="auth-visual">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1400&q=80" alt="Football crowd">
+      <div class="veil">
+        <h2>Free to start. Upgrade when you want every camera.</h2>
+      </div>
+    </div>
+    <div class="auth-panel">
+      <div class="auth-box">
+        <div class="kicker">Create account</div>
+        <h1>Join free</h1>
+        <p>News, scores, studio shows and highlights. Live matches need MS Premium later.</p>
+        <div id="auth-alert" class="alert"></div>
+        <form class="form" id="signup-form">
+          <label>Full name
+            <input type="text" name="name" required placeholder="Abdul Muqeet">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>Password
+            <input type="password" name="password" required minlength="6" autocomplete="new-password">
+          </label>
+          <label>Favourite sport
+            <select name="sport">
+              <option>Cricket</option>
+              <option>Football</option>
+              <option>Baseball</option>
+              <option>Hockey</option>
+              <option>Basketball</option>
+              <option>Tennis</option>
+              <option>Formula 1</option>
+            </select>
+          </label>
+          <button class="btn btn-lime" type="submit">Create free account</button>
+        </form>
+        <p class="note">Already on the network? <a href="login.html">Sign in</a></p>
+      </div>
+    </div>
+  </section>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 18px;
+  padding-top: 22px;
+}
+
+.hero-main {
+  position: relative;
+  min-height: 460px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero-main img,
+.hero-shop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 28px;
+  background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.86));
+}
+
+.overlay h1 { max-width: 16ch; }
+
+.hero-side { display: grid; gap: 14px; }
+
+.side-story {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.side-story img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-story div { padding: 12px 12px 12px 0; }
+
+.score-strip {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(140px, 1fr));
+  gap: 10px;
+  overflow: auto;
+  padding: 18px 0 6px;
+}
+
+.score-card {
+  min-width: 160px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.score-card .meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--dim);
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+}
+
+.score-card .team {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.watch-tile { position: relative; }
+
+.watch-tile .play {
+  position: absolute;
+  top: 72px;
+  left: 16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--lime);
+  color: #111;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+}
+
+.product-tile img { height: 220px; background: #10141c; }
+
+.split-banner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-top: 8px;
+}
+
+.split-banner .copy {
+  padding: 36px;
+  background: linear-gradient(180deg, #12160c, #0d1017);
+}
+
+.split-banner img { height: 100%; min-height: 280px; object-fit: cover; }
+
+@media (max-width: 900px) {
+  .hero,
+  .split-banner { grid-template-columns: 1fr; }
+  .score-strip { grid-template-columns: repeat(3, minmax(150px, 1fr)); }
+}

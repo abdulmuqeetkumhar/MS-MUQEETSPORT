@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Muqeet Sport</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="account">
+  <div data-header></div>
+  <main class="wrap section" data-session>
+    <div class="kicker">Membership</div>
+    <h1>Hello, <span data-name>fan</span></h1>
+    <p data-email></p>
+    <p data-premium-badge></p>
+    <div class="grid-3">
+      <article class="card">
+        <div class="card-body">
+          <h3>Plan</h3>
+          <p data-plan>Free</p>
+          <a class="btn btn-gold" href="premium.html">Upgrade</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Continue watching</h3>
+          <p>AUS v IND Test · CR1. Premium if you want the live feed.</p>
+          <a class="btn btn-red" href="watch.html?id=ind-aus">Resume</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Free tonight</h3>
+          <p>The Breakdown studio + F1 qualifying highlights + NBA condensed.</p>
+          <a class="btn btn-ghost" href="watch.html?id=studio">Open MS1</a>
+        </div>
+      </article>
+    </div>
+    <p style="margin-top:28px"><button class="btn btn-ghost" id="logout" type="button">Sign out</button></p>
+  </main>
+  <div data-footer></div>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

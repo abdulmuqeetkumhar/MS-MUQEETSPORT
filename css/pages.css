@@ -1,0 +1,71 @@
+.page-hero {
+  padding: 36px 0 8px;
+}
+
+.page-hero .btn {
+  margin: 8px 8px 0 0;
+}
+
+.article {
+  max-width: 760px;
+}
+
+.article img {
+  width: 100%;
+  border-radius: 18px;
+  margin: 18px 0;
+  height: 380px;
+  object-fit: cover;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.info-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.standings table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.standings th,
+.standings td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+}
+
+.side-nav a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.side-nav a.is-active,
+.side-nav a:hover {
+  background: var(--surface);
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .contact-grid,
+  .account-grid { grid-template-columns: 1fr; }
+}
